@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./form.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row" style = "border-bottom: 1px solid #D2D2D2;">
+            <div class ="logo" class="col">
+                <h1 style ="color : aqua">To the New</h1>
+
+            </div>
+            <div class="col offset-5" >
+                <div class ="row mt-4" style = "color : aqua">
+                  <dicv class="col offset-3">help</dicv>
+                  <dicv class="col">quick links</dicv>     
+                </div>
+               
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-2 offset-3">
+                <div class="box">
+                    <div class="heading">
+                           <h4>BUG REPORT</h4>
+                    </div>
+                    <div class="formbody">
+                        <form>
+                            <label class="sp" for="exampleInputPassword1">Title</label>
+                            <input class="form-control" type="text" placeholder="Default input">
+                            <label class="sp" for="exampleInputPassword1">Description</label>
+                            <input class="form-control" type="text" placeholder="Default input">
+                            <label class="sp" for="exampleInputPassword1">Operating system</label>
+
+                            <select class="custom-select">
+                                <option selected>Mac</option>
+                                <option value="1">Windows</option>
+                            </select>
+                            <label class="sp" for="exampleInputPassword1">Product</label>
+
+                            <select class="custom-select">
+                                <option selected>Computer</option>
+                                <option value="1">hardisk</option>
+                            </select>
+                            <label class="sp" for="exampleInputPassword1">version</label>
+                            <input class="form-control" type="text" placeholder="Default input">
+                            <label class="sp" for="exampleInputPassword1">licence</label>
+                            <br>
+
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline1" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" class="sp" for="customRadioInline1">male</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline2" name="customRadioInline1"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" class="sp" for="customRadioInline2">female</label>
+                            </div>
+                            <br>
+                            <label class="sp" for="exampleInputPassword1">severity</label>
+
+                            <select class="custom-select">
+                                <option selected>critical</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <label class="sp" for="exampleInputPassword1">Attachment</label>
+
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" class="sp" for="customFile">Choose file</label>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class ="foot">
+                        <button type="button" class="btn btn-success">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
