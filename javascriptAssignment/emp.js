@@ -214,7 +214,7 @@ const empdata = [
 
 
   var ageobj = {};
-  console.log(empdata[0].age);
+  
 
   for(i in empdata)
   {
