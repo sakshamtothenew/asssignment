@@ -6,7 +6,7 @@
 
 .bigcard {
     position : absolute;
-    top : 130px;
+    top : 110px;
     background-color: white;
     height : 1000px;
     width : 90%;
@@ -41,7 +41,7 @@
     top : 40px;
     width : 90%;
     background-color : #D3D3D3	;
-    border-radius : 2%;
+    border-radius : 10px;
 }
 
 .paratext {
@@ -90,15 +90,17 @@ span {
 .navbox {
     position:absolute;
     height: 100px;
-    width : 80%;
-    left : 70px;
+    width : 90%;
+    left :  50px;
     background-color : #202020;
 
 }
+
+
 .nav {
-     top : -10px;
-     height : 30px;
-     left : 80px;
+     top : -40px;
+     height : 50px;
+     left : 100px;
     width : 80%;
     background-color  :#101010;
     position : relative ; 
@@ -107,13 +109,16 @@ span {
 
 .nav a {
    margin-left : 30px;
-
-   align-items: center;   
+      position : relative;
+      /* top : 10px; */
+         align-items: center;   
 }
 
 .navbox h1 {
     position : relative ;
     top : -20px;
+    left : 95px;
+    width : 80%;
 }
 .foot { 
     background-color : #101010;
