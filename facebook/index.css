@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    padding : 0;
+    margin  :0;
+
+}
+
+body { 
+    height : 100%;
+ background : linear-gradient(white, #D3D8E8);
+
+}
+.container {
+
+    max-width : 1200px;
+    overflow: auto;
+    padding : 0  30px 0  30px;
+    margin : auto;
+}
+
+.navbar {
+    background-color: #395897;
+    overflow: auto;
+   height : 82px;
+}
+.logo {
+    float : left ;
+    width : 50%;
+    
+}
+.logo h1  {
+
+    color : #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size :  40px;
+    padding-top : 28px;
+}
+
+.login-form {
+  
+    float : right ;
+    width : 50%;
+   padding-top : 20px;
+   padding-left : 30px;
+
+}
+.login-form input {
+
+    width : 150px;
+    height :   21px;
+    margin-left : 20px;
+    background-color: #e8f0fe;
+    border : transparent
+}
+
+.login-form button {
+    margin-left : 20px;
+    background-color: #4367b1;
+    color : #fff;
+    border : transparent;
+    padding : 5px;
+    font-weight: bold;
+
+}
+
+.email-input label{
+   display : block;
+   margin-left : 20px;
+   color : #fff;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size : 12px;
+   padding-bottom : 5px;
+}
+
+.signin-form div {
+     display : inline-block;
+}
+.password label{
+    display : block;
+    margin-left : 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #fff;
+    font-size : 12px;
+}
+.fp {
+
+    font-size : 13px; 
+     padding-left : 200px;
+     color :#859bc7;
+     font-family: Arial, Helvetica, sans-serif;
+     text-decoration: none;
+}
+
+.fp:hover {
+    text-decoration: underline;
+}
+
+
+.left-section {
+    float :left ;
+    width : 50%;
+     margin-top : 50px;
+     padding-left: 20px;
+}
+
+.right-section {
+    float : right;
+    width : 50%;
+    margin-top : 30px;
+    padding-left : 30px;
+}
+
+.left-section h2 {
+
+    color : #1c324d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 20px;
+    padding : 0 40px 0 40px ;
+
+}
+
+.section-heading {
+
+    font-size : 24px;
+     color : #333333;
+     font-family: Arial, Helvetica, sans-serif;
+     padding : 0 0 20px 0
+}
+
+.section-heading h1 {
+    margin-bottom : 5px;
+}
+.section-heading h5 {
+    font-size : 19px;
+
+}
+
+.signup-form input{
+  
+     height : 39px;
+     border-radius : 5px;
+     border : 1px solid #c1c5cd;
+
+}
+
+.signup-form input::placeholder {
+
+    padding : 10px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #aca7a7;
+    font-size : 16px;
+}
+.signup-form div {
+
+    padding : 10px;
+}
+
+.contact-info input {
+
+    width : 81%;
+}
+.name input {
+    width : 40%;
+}
+.password-field input {
+    width : 81%;
+}
+
+.date {
+    display : block;
+}
+
+.birthday-column select{
+    
+    height : 30px;
+    background-color : #fff;
+    margin-left : -2px;
+
+}
+.birthday-column select::-ms-value{
+    padding : 10px 8px;
+}
+.date {
+    color : #90949c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 16px;
+    font-weight : bold;
+    padding-bottom : 10px;
+}
+.birthday-column select:nth-child(1)
+{
+    width : 56px;
+}
+.birthday-column select:nth-child(2){
+    width : 69px;
+}
+.birthday-column select:nth-child(3) {
+    width : 61px;
+}
+
+.policy {
+
+    font-size : 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color : #777777;
+    margin-right : 230px;
+    padding-left : 10px;
+}
+
+.signupbtn {
+
+    width : 194px;
+    height : 39px;
+    font-size : 20px;
+    color : #fff;
+    font-weight : bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius : 5px;
+ 
+    background-image: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
+
+}
+
+.gender-selection label:not(:first-child){
+  
+    font-size : 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left : 5px;
+}
+
+.gender-selection input {
+    padding-top : 70px;
+}
+.band-page {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size : 14px;
+    color : #666666;
+    font-weight : bold;
+}
