@@ -7,7 +7,7 @@
 
 body { 
     height : 100%;
- background : linear-gradient(white, #D3D8E8);
+ background : linear-gradient(white, #D3D8E8) no-repeat;
 
 }
 .container {
@@ -218,7 +218,6 @@ body {
     border-radius : 5px;
  
     background-image: linear-gradient(rgb(103, 174, 85), rgb(87, 136, 67));
-
 }
 
 .gender-selection label:not(:first-child){
