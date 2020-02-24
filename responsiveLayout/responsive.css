@@ -1,0 +1,83 @@
+
+@media screen and (max-width : 890px)
+{
+    .right-nav-options li{
+        padding : 2rem 0 1rem 0;
+    }
+
+    .container {
+        max-width: 40rem;
+    }
+}
+@media screen and (max-width : 768px) 
+{
+     header {
+         height : 100vh;
+        
+     }
+    .container {
+        max-width: 40rem;
+    }
+
+    .car-logo {
+        display : block;
+        float : none;
+        border : none;
+        margin : auto;
+        padding: 1.5rem 3rem;
+    }
+    .camera-logo {
+        display : block;
+        float : none;
+        margin :auto;
+        padding : 1.5rem 3rem; 
+    }
+
+    
+    .right-nav-options  {
+        /* float : none; */
+        display: none;
+    }
+
+    .ham-b {
+       
+       display : block;
+       float : right ;
+     }
+     .options {
+         height : 100%;
+     }
+   
+     .left-division {
+         display : block;
+         float : none;
+       
+         width : 100%;
+     }
+     .right-division {
+         display : block;
+         float : none;
+         
+         width : 100%;
+     }
+
+     .ham-b:hover ~ .side-nav {
+         display : block;
+        
+     }
+    
+}
+
+@media screen and (min-width : 375px) and (max-width : 767px)
+ {
+     .right-nav-options  {
+         /* float : none; */
+         display: none;
+     }
+
+     .ham-b {
+        
+        display : block;
+        float : right ;
+      }
+ }

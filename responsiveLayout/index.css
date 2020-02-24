@@ -1,0 +1,283 @@
+
+* {
+    box-sizing: border-box;
+    padding : 0;
+    margin :0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+
+      height : 90vh;
+     background-image : url('./public/bg.jpg');
+     background-position: center; /* Center the image */
+     background-repeat: no-repeat; /* Do not repeat the image */
+     background-size: cover; 
+    color : #fff;
+
+}
+.container {
+     max-width: 60rem;
+     overflow: auto;
+     margin : auto;
+     clear : both;
+
+}
+.navbar {
+    background-color: transparent;
+    height :  100px;
+    overflow: auto;
+}
+
+.navbar .container {
+
+    border-bottom : 1px solid #999999;
+}
+
+.navbar h4 {
+    float :left;
+    width : 50%;
+}
+ 
+.ham-b {
+    height : 2rem;
+    width : 3rem;
+    border : 2px solid #6cc092;
+    border-radius : 5px;
+    display: none;
+    margin: 2rem;
+}
+
+.ham-b .fas {
+    padding : 0.4rem 0.9rem;
+    color : #6cc092;
+}
+
+
+.left-nav-heading h4 {
+
+    padding :  2rem 0;
+    
+}
+.navbar .list {
+
+    float : right;
+    width : 50%;
+}
+.right-nav-options li{
+    float : left;
+    list-style : none;
+    padding : 2rem 0rem 1rem 2rem;
+    margin-left : 1rem; 
+     
+}
+
+.right-nav-options li:last-child{
+
+    padding-right : 0;
+
+
+}
+.list ul {
+    float : right;
+    width : 70%;
+}
+
+.welcome-section {
+    position : relative;
+    height : 100%;
+}
+.welcome-div {
+    position : absolute;
+    top : 40%;
+    left : 50%;
+    transform : translate(-50% , -50%);
+    
+        
+}
+
+.Layout {
+    height : 100%;
+    background-color: RGBA(80, 80, 94 , 0.8);
+}
+.welcome-div {
+    text-align : center;
+    
+}
+.welcome-div h1 {
+
+    font-size : 40px;
+    font-weight: lighter;
+
+}
+
+.options {
+    /* border : 1px solid orange; */
+    overflow : auto;
+    width :  30rem;
+    height : 10rem;
+
+}
+
+.options .fas {
+    color : #6cc092;
+}
+
+.options .fas:hover {
+    
+    color : #fff;
+    transition-duration: 0.5s;
+}
+
+.options .fas:hover ~ h3 {
+
+    color : #6cc092;
+    transition-duration: 0.5s;
+}
+
+
+.car-logo {
+    float : left;
+    width : 50%;
+    padding : 1.5rem 3rem 0rem 0rem;
+    border-right : 1.5px solid #888888;
+    margin-top : 2rem;
+
+}
+
+.camera-logo {
+    float : right;
+    width : 50%;
+    padding : 1.5rem 0rem 0rem 3rem;
+    margin-top : 2rem;
+
+}
+ 
+.car-logo h3 {
+     padding-top : 0.5rem;
+     font-weight: lighter;
+
+}
+.car-logo p {
+
+    font-size : 11px;
+    padding-top : 0.5rem;
+    color : #a2a1ae;
+
+}
+.camera-logo h3 {
+    padding-top : 0.5rem;
+     font-weight: lighter;
+}
+
+.camera-logo p {
+
+    font-size : 11px;
+    padding-top : 0.5rem;
+    color : #a2a1ae;
+}
+.get-started {
+
+    height : 2.5rem;
+    width : 11rem;
+    border : 2px solid #73ae97;
+    border-radius : 20px;
+    color : #73ae97;
+    background : transparent;
+    margin-top : 2rem;
+    font-weight : bold;
+    outline: none;
+
+}
+.left-division {
+    float : left ;
+    width : 50%;
+    padding : 5rem;
+    text-align: center;
+}
+.footer-section img {
+
+   height : 7rem;
+   width : 7rem;
+   border-radius : 50%;
+}
+.left-division h2 {
+    color : #595959;
+    padding : 1rem 8rem 1rem 8rem;
+    line-height: 1.7;
+}
+
+.left-division p {
+   
+    font-size : 11px;
+    color : #9b9b9b;
+    padding : 0 4rem 2rem 4rem;
+    line-height : 1.7;
+    
+}
+
+ .get-started:hover{
+
+    background-color: #6cc092;
+    transition-duration: 0.5s;
+    color : #fff;
+    cursor : pointer
+ }
+.right-division {
+    float : right;
+    width : 50%;
+    padding : 5rem;
+    text-align : center;
+}
+.side-nav {
+    height : 100%;
+    background-color: #6cc092;
+    width : 30%;
+    position : absolute;
+    right : 0;
+    display : none;
+}
+.side-nav .fas {
+    position : relative;
+    left : 95%;
+}
+
+
+.side-nav ul li {
+    list-style : none;
+    padding: 2rem;
+    border-bottom: 1px solid #fff;
+}
+.learn-more {
+    height : 2.5rem;
+    width : 11rem;
+    border : 2px solid #73ae97;
+    border-radius : 20px;
+    color : #73ae97;
+    background : transparent;
+    font-weight : bold;
+    outline: none;
+}
+
+.learn-more:hover {
+
+    background-color: #6cc092;
+    transition-duration: 0.5s;
+    color : #fff;
+    cursor : pointer;
+}
+.right-division h2 {
+    color : #595959;
+    padding : 1rem 8rem 1rem 8rem;
+    line-height: 1.7;   
+}
+
+.right-division p {
+
+    font-size : 11px;
+    color : #9b9b9b;
+    padding : 0 4rem 2rem 4rem;
+    line-height : 1.7;
+}
+
+
