@@ -51,13 +51,13 @@
      .left-division {
          display : block;
          float : none;
-       
+        padding : 1rem 0 1rem 0;
          width : 100%;
      }
      .right-division {
          display : block;
          float : none;
-         
+         padding : 0;
          width : 100%;
      }
 
@@ -67,17 +67,3 @@
      }
     
 }
-
-@media screen and (min-width : 375px) and (max-width : 767px)
- {
-     .right-nav-options  {
-         /* float : none; */
-         display: none;
-     }
-
-     .ham-b {
-        
-        display : block;
-        float : right ;
-      }
- }
