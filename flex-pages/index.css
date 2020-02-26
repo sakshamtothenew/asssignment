@@ -64,7 +64,7 @@
     /* border-left : 1px solid #888888; */
     color : #fff;
     /* outline: none;; */
-    font-size : 20px;
+    font-size : 2rem;
     border : none;
     border-left : 2px solid #dddddd;
     outline : none;
@@ -116,6 +116,13 @@ text-align : center;
      font-weight : bold;
 }
 
+.banner-layout div button:hover {
+    background : linear-gradient(90deg,#fc4a1a 0%, #f7b733  100% );
+    height: 3.5rem;
+    width : 11rem;
+    transition-duration: 0.5s ;
+
+}
 .breadcrum  {
     display : flex;
     position : absolute;
@@ -233,6 +240,15 @@ text-align : center;
   height : 100%
 
 }
+
+.partners:hover {
+
+   border : 1px solid rgb(235, 146, 12);
+   box-shadow: -2px 1px 46px 14px rgba(217,202,222,1); 
+    /* width : 27%; */
+    transition-duration: 0.5s ;
+
+}
 .partners img{
 
     width : 25%;
@@ -250,6 +266,13 @@ text-align : center;
     box-shadow: -2px 1px 46px 14px rgba(217,202,222,1); 
 
     
+}
+
+.partner-list button:hover {
+
+    background:  rgb(84, 24, 139);
+    color :  white;
+    transition-duration: 0.5s;
 }
 
 .partner-list button i {
@@ -299,6 +322,15 @@ text-align : center;
     border-radius: 0.4rem;
 }
 
+.pi-area textarea:hover , .com-area textarea:hover {
+
+
+   border : 1px solid rgb(235, 146, 12);
+   box-shadow: -2px 1px 46px 14px rgba(217,202,222,1); 
+    /* width : 27%; */
+    transition-duration: 0.5s ;
+}
+
 
 .submit-btn  {
     width : 100%;
@@ -316,6 +348,13 @@ text-align : center;
  
 }
 
+.submit-btn button:hover {
+    background : linear-gradient(90deg,#fc4a1a 0%, #f7b733  100% );
+  
+    
+    
+}
+
 .Apply-column button{
     padding : 1rem 3rem;
     margin : 4% 2%;   
@@ -326,6 +365,10 @@ text-align : center;
     font-weight : bold;
 }
 
+.Apply-column button:hover {
+    background : linear-gradient(90deg,#fc4a1a 0%, #f7b733  100% );
+
+}
 .Apply-column .fas {
 
     color : #fff;
@@ -359,5 +402,40 @@ text-align : center;
 
     @media screen and (max-width : 768px)
     {
-        
+        .left-nav{
+            flex-wrap : wrap;
+
+        }
+        .featured-videos {
+            flex-wrap : wrap;
+        }
+
+        .right-nav ul {
+            justify-content: center;
+        }
+        .right-nav ul li {
+            width: 100%;
+            text-align: center;
+        }
+
+        .left-nav select {
+            margin : 1rem;
+            padding : 0.5rem 1rem;
+
+        }
+        .pi-area  {
+            width : 100%;
+        }
+
+        .com-area {
+            width : 100%;
+        }
+        .contact {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+       .contact div:last-child {
+           display: none;
+       }
     }
