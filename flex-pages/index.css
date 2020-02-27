@@ -111,6 +111,7 @@ text-align : center;
      width : 10rem;
      border-radius : 2rem;
      border : none;
+     
      background : linear-gradient(90deg,#f7b733 0%,  #fc4a1a 100% );
      color : #fff;
      font-weight : bold;
@@ -237,7 +238,7 @@ text-align : center;
 }
 .partners  {
     
-    width : 25%;
+    flex-basis : 25%;
     text-align : center;
     padding : 2% 0;
     border : 1px solid #eeeeee;
@@ -268,6 +269,7 @@ text-align : center;
     background-color: white;
     color : rgb(84, 24, 139);
     box-shadow: -2px 1px 46px 14px rgba(217,202,222,1); 
+
 
     
 }
@@ -305,7 +307,7 @@ text-align : center;
     padding : 4% 0 2% 0 ;
 }
 .pi-area {
-   width : 33%;
+   flex-basis : 33%;
    
 }
 
@@ -441,5 +443,12 @@ text-align : center;
 
        .contact div:last-child {
            display: none;
+       }
+
+        .partner-form {
+            flex-direction: column;
+        }
+       .partners {
+                 flex-basis : 50%;
        }
     }
