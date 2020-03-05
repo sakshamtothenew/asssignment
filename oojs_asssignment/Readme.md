@@ -31,8 +31,8 @@ Q4.
     
     3. arguments.length --- The arguments.length property contains the number of arguments passed to the    function.
 
-Q5.
-**https://jsbin.com/lopisurise/edit?js,console**
+Q5. 
+**https://jsbin.com/xurequnuwi/edit?js,console**
 
 Q6.
 **https://jsbin.com/jezahekogo/edit?js,console**
