@@ -1,0 +1,8 @@
+.btn {
+    padding : 1% 5%;
+    background-color: yellow;
+    color: blue;
+
+    font-weight: bold;
+    border:  none;
+}

@@ -1,0 +1,21 @@
+.todo {
+    border : 1px solid green ;
+   
+     display: flex;
+}
+
+.title  {
+    padding : 30px;
+    border-right: 1px solid blue;
+
+}
+
+.quantity {
+    padding : 30px;
+    
+}
+
+
+
+
+
