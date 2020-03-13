@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Todo from './Component/Todo/Todo'
-import Button from './Component/Button/Button'
+import Form from './Component/Form/form'
 import './App.css';
 
 class App extends Component {
@@ -9,17 +9,8 @@ class App extends Component {
   }
 
   updatelist = () => {
-    let inputval = document.getElementsByClassName('inputtask')[0].value;
-
-    let seg = inputval.split('-');
-
-    document.getElementsByClassName('inputtask')[0].value = "";
-    let newlist = [...this.state.list];
-    newlist.push({ id: Date.now(), task: seg[0], quantity: seg[1] })
-
-    this.setState({
-      list: newlist
-    })
+  
+   
   }
 
 
@@ -34,8 +25,30 @@ class App extends Component {
       list: newlist
     })
   }
+  
+   changehandler = (event) => {
+     event.preventDefault()
+     console.log(event)
+    const inputval = event.target[0].value;
+    
+     if(inputval == "")
+     {
+       alert('please enter something');
+     }
+     else {
+      let seg = inputval.split('-');
 
+        event.target[0].value = "";;
+      let newlist = [...this.state.list];
+      newlist.push({ id: Date.now(), task: seg[0], quantity: seg[1] })
+  
+      this.setState({
+        list: newlist
+      })
+     }
+   
 
+}
 
   render() {
 
@@ -48,8 +61,7 @@ class App extends Component {
     )
     return (
       <div className="app">
-        <input className="inputtask" />
-        <Button name="Submit" click={this.updatelist} />
+    <Form changehandler = {this.changehandler} />
         {tasks}
       </div>
     )

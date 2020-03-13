@@ -1,21 +1,38 @@
+* {
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+}
 .todo {
-    border : 1px solid green ;
-   
-     display: flex;
+   width : 40%;
+   margin : auto;
+   display: flex;
+   justify-content: center;
+   border : 1px solid #888888;
 }
 
 .title  {
-    padding : 30px;
-    border-right: 1px solid blue;
+  
+    padding : 20px;
+    flex : 1;
+    width : 33%;
+    overflow-wrap: break-word;
+    
 
 }
 
 .quantity {
-    padding : 30px;
-    
+   padding : 20px;
+   flex : 1;
+    width : 33%;
+    overflow-wrap : break-word;
 }
 
 
+#delbtn {
+    background-color: rgb(189, 15, 15);
+    flex : 1
+}
 
 
 
