@@ -5,7 +5,7 @@
 }
 .todo {
    width : 40%;
-   margin : auto;
+   /* margin : auto; */
    display: flex;
    justify-content: center;
    border : 1px solid #888888;
@@ -13,26 +13,24 @@
 
 .title  {
   
-    padding : 20px;
+    padding : 10px;
     flex : 1;
     width : 33%;
     overflow-wrap: break-word;
+    border-right : 1px solid lightgray
     
 
 }
 
 .quantity {
-   padding : 20px;
+   padding : 10px;
    flex : 1;
     width : 33%;
     overflow-wrap : break-word;
 }
 
-
-#delbtn {
-    background-color: rgb(189, 15, 15);
-    flex : 1
+.Wrapper {
+    display:  flex;
+    justify-content: center;
 }
-
-
 

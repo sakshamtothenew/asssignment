@@ -1,0 +1,14 @@
+.inputfield {
+
+    height : 30px;
+    width  : 250px;
+    border-radius : 5px;
+    border : 1px solid #888888;
+    outline : none;
+    font: larger;
+    padding : 10px;
+}
+
+.form {
+    margin : 20px 0;
+}

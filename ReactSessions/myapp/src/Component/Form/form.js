@@ -4,9 +4,9 @@ import './form.css'
 const Form = (props) => {
     
      return(
-         <form onSubmit = {props.changehandler}>
-         <input type = "text"  />
-          <Button name = "submit" />
+         <form className="form" onSubmit = {props.changehandler}>
+         <input placeholder ="Fruit-Quantity" className = "inputfield" type = "text"  />
+          <Button classname = "btn" name = "submit" />
          </form>
      )
 

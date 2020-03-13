@@ -53,7 +53,7 @@ class App extends Component {
   render() {
 
     let tasks = (
-
+        
       this.state.list.map((item, index) => {
 
         return <Todo deletetask={this.deletetask} task={item.task} index={item.id} quantity={item.quantity} />
@@ -61,8 +61,10 @@ class App extends Component {
     )
     return (
       <div className="app">
+        <h1 className= "heading">Fruits App</h1>
     <Form changehandler = {this.changehandler} />
         {tasks}
+        
       </div>
     )
   }
