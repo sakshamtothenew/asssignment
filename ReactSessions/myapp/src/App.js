@@ -9,8 +9,8 @@ class App extends Component {
   }
 
   updatelist = () => {
-  
-   
+
+
   }
 
 
@@ -25,35 +25,34 @@ class App extends Component {
       list: newlist
     })
   }
-  
-   changehandler = (event) => {
-     event.preventDefault()
-     console.log(event)
+
+  changehandler = (event) => {
+    event.preventDefault()
+    console.log(event)
     const inputval = event.target[0].value;
-    
-     if(inputval == "")
-     {
-       alert('please enter something');
-     }
-     else {
+
+    if (inputval == "") {
+      alert('please enter something');
+    }
+    else {
       let seg = inputval.split('-');
 
-        event.target[0].value = "";;
+      event.target[0].value = "";;
       let newlist = [...this.state.list];
       newlist.push({ id: Date.now(), task: seg[0], quantity: seg[1] })
-  
+
       this.setState({
         list: newlist
       })
-     }
-   
+    }
 
-}
+
+  }
 
   render() {
 
     let tasks = (
-        
+
       this.state.list.map((item, index) => {
 
         return <Todo deletetask={this.deletetask} task={item.task} index={item.id} quantity={item.quantity} />
@@ -61,10 +60,10 @@ class App extends Component {
     )
     return (
       <div className="app">
-        <h1 className= "heading">Fruits App</h1>
-    <Form changehandler = {this.changehandler} />
+        <h1 className="heading">Fruits App</h1>
+        <Form changehandler={this.changehandler} />
         {tasks}
-        
+
       </div>
     )
   }
