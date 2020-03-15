@@ -13,6 +13,7 @@ class App extends Component {
 
   d = (event) => {
     this.setState({inputval : event.target.value})
+    
   }
   edittask = (event , i) => {
     const index = this.state.list.findIndex((l) => l.id === i);
@@ -31,20 +32,31 @@ class App extends Component {
   editingcurrtask = (event , i) => {
     event.preventDefault()
     const index = this.state.list.findIndex((l) => l.id === i);
-    console.log(index)
+    
     const list = [...this.state.list];
     console.log(list);
-    const  inputval  = event.target[0].value;
-    event.target[0].value = "";
-    const seg = inputval.split('-');
-    list[index].task = seg[0] ;
+    if(!list[index])
+    {
+      alert("element deleted while editing or element not present")
+      this.setState({editmode  : !this.state.editmode ,
+         inputval : ""
+       })
+    }
+    else {
+      const  inputval  = event.target[0].value;
+      event.target[0].value = "";
+      const seg = inputval.split('-');
+      list[index].task = seg[0] ;
+      
+      list[index].quantity = seg[1];
+      const editmode = this.state.editmode
+      this.setState({
+        list : list , 
+         editmode : !editmode , 
+         inputval : ""
+      })
+    }
     
-    list[index].quantity = seg[1];
-    const editmode = this.state.editmode
-    this.setState({
-      list : list , 
-       editmode : !editmode
-    })
   }
 
   deletetask = (i) => {
@@ -75,7 +87,8 @@ class App extends Component {
       newlist.push({ id: Date.now(), task: seg[0], quantity: seg[1] })
 
       this.setState({
-        list: newlist
+        list: newlist , 
+        inputval : ""
       })
     }
 
