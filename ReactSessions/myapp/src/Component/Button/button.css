@@ -16,3 +16,14 @@
     font-weight: bold;
     border-radius: 5px;
 }
+
+.editbtn {
+
+  margin-left: 10px;
+  padding : 5px 30px;
+  border : none;
+  background-color : rgba(214, 214, 19, 0.932);
+  color : rgb(13, 13, 172);
+  font-weight: bold;
+  border-radius: 5px;
+}

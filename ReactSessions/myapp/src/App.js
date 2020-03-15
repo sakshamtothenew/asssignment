@@ -5,14 +5,47 @@ import './App.css';
 
 class App extends Component {
   state = {
-    list: []
+    list: [] , 
+  
+     editmode : false 
   }
 
-  updatelist = () => {
 
+  d = (event) => {
+    this.setState({inputval : event.target.value})
+  }
+  edittask = (event , i) => {
+    const index = this.state.list.findIndex((l) => l.id === i);
+  
+
+     const editmode = this.state.editmode;
+     this.setState({
+       inputval :  this.state.list[index].task + "-" + this.state.list[index].quantity,
+        editmode : !editmode , 
+        currindex : i
+     })
+    
 
   }
 
+  editingcurrtask = (event , i) => {
+    event.preventDefault()
+    const index = this.state.list.findIndex((l) => l.id === i);
+    console.log(index)
+    const list = [...this.state.list];
+    console.log(list);
+    const  inputval  = event.target[0].value;
+    event.target[0].value = "";
+    const seg = inputval.split('-');
+    list[index].task = seg[0] ;
+    
+    list[index].quantity = seg[1];
+    const editmode = this.state.editmode
+    this.setState({
+      list : list , 
+       editmode : !editmode
+    })
+  }
 
   deletetask = (i) => {
 
@@ -55,13 +88,26 @@ class App extends Component {
 
       this.state.list.map((item, index) => {
 
-        return <Todo deletetask={this.deletetask} task={item.task} index={item.id} quantity={item.quantity} />
+        return <Todo
+          toedit={this.state.list[index]}
+      
+          edittask={this.edittask}
+          deletetask={this.deletetask}
+          task={item.task}
+          index={item.id}
+          quantity={item.quantity} />
       })
     )
     return (
       <div className="app">
         <h1 className="heading">Fruits App</h1>
-        <Form changehandler={this.changehandler} />
+        <Form value={this.state.inputval}
+        index = {this.state.currindex}
+        d = {this.d}
+         editingcurrtask = {this.editingcurrtask}
+          changehandler={this.changehandler}
+           editing = {this.state.editmode}
+             />
         {tasks}
 
       </div>
