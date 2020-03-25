@@ -16,7 +16,7 @@ window.onload = function () {
         ]
 
         setInterval(function () {
-            var currdate = new Date("Wed Mar 25 2020 12:13:14 GMT +0530");
+            var currdate = new Date();
             var h1 = document.getElementById('time');
             var greet = document.getElementById('greeting');
             var merdian = "AM";
