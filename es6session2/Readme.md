@@ -3,7 +3,8 @@ Q1.
 
 
 Q2.
-i have doubts in 2nd question
+i have doubts in 2nd question , I did this with another method
+**https://jsbin.com/meridejafa/edit?js,console**
 
 
 Q3.
