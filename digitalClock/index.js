@@ -28,7 +28,7 @@ window.onload = function () {
                 var hours = currdate.getHours() % 12;
 
             }
-            if(currdate.getHours()===12)
+            if(currdate.getHours()>=12)
             {
                
                     merdian = "PM";
