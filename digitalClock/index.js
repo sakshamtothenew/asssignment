@@ -16,7 +16,7 @@ window.onload = function () {
         ]
 
         setInterval(function () {
-            var currdate = new Date();
+            var currdate = new Date("Wed Mar 25 2020 12:13:14 GMT +0530");
             var h1 = document.getElementById('time');
             var greet = document.getElementById('greeting');
             var merdian = "AM";
@@ -28,16 +28,19 @@ window.onload = function () {
                 var hours = currdate.getHours() % 12;
 
             }
+         
+
+            else {
+                var hours = currdate.getHours();
+            }
+
             if(currdate.getHours()>=12)
             {
                
                     merdian = "PM";
             }
 
-            else {
-                var hours = currdate.getHours();
-            }
-
+          
             if (hours >= 0 && hours <= 4 && merdian == 'PM') {
                 message = "Good Afternoon";
             }
